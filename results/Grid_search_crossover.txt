@@ -1,0 +1,224 @@
+=== Starting Bagging Comparison Experiment (N=64, People=30) ===
+
+--- Testing with 1 Bags ---
+100%|██████████| 30/30 [01:16<00:00,  2.55s/it]
+Results for 1 Bags:
+  > Hashed EER Point:  Hyperplane = 18.6916°, Rate = 0.0442
+
+--- Testing with 3 Bags ---
+100%|██████████| 30/30 [03:24<00:00,  6.81s/it]
+Results for 3 Bags:
+  > Hashed EER Point:  Hyperplane = 12.5991°, Rate = 0.0191
+
+--- Testing with 5 Bags ---
+100%|██████████| 30/30 [09:53<00:00, 19.77s/it]
+Results for 5 Bags:
+  > Hashed EER Point:  Hyperplane = 9.8212°, Rate = 0.0159
+
+--- Testing with 7 Bags ---
+100%|██████████| 30/30 [12:35<00:00, 25.17s/it]
+Results for 7 Bags:
+  > Hashed EER Point:  Hyperplane = 9.1737°, Rate = 0.0170
+
+--- Testing with 9 Bags ---
+100%|██████████| 30/30 [15:41<00:00, 31.39s/it]
+Results for 9 Bags:
+  > Hashed EER Point:  Hyperplane = 8.0057°, Rate = 0.0131
+
+--- Testing with 11 Bags ---
+100%|██████████| 30/30 [17:18<00:00, 34.61s/it]
+Results for 11 Bags:
+  > Hashed EER Point:  Hyperplane = 7.2857°, Rate = 0.0130
+
+--- Testing with 13 Bags ---
+100%|██████████| 30/30 [17:38<00:00, 35.30s/it]
+Results for 13 Bags:
+  > Hashed EER Point:  Hyperplane = 6.6986°, Rate = 0.0133
+
+
+=== Starting Bagging Comparison Experiment (N=72, People=30) ===
+
+--- Testing with 1 Bags ---
+100%|██████████| 30/30 [04:58<00:00,  9.94s/it]
+Results for 1 Bags:
+  > Hashed EER Point:  Hyperplane = 22.1297°, Rate = 0.0343
+
+--- Testing with 3 Bags ---
+100%|██████████| 30/30 [09:19<00:00, 18.65s/it]
+Results for 3 Bags:
+  > Hashed EER Point:  Hyperplane = 14.9095°, Rate = 0.0180
+
+--- Testing with 5 Bags ---
+100%|██████████| 30/30 [13:52<00:00, 27.75s/it]
+Results for 5 Bags:
+  > Hashed EER Point:  Hyperplane = 12.9573°, Rate = 0.0132
+
+--- Testing with 7 Bags ---
+100%|██████████| 30/30 [18:40<00:00, 37.36s/it]
+Results for 7 Bags:
+  > Hashed EER Point:  Hyperplane = 10.8814°, Rate = 0.0100
+
+--- Testing with 9 Bags ---
+100%|██████████| 30/30 [21:38<00:00, 43.30s/it]
+Results for 9 Bags:
+  > Hashed EER Point:  Hyperplane = 10.2648°, Rate = 0.0118
+
+--- Testing with 11 Bags ---
+100%|██████████| 30/30 [24:31<00:00, 49.04s/it]
+Results for 11 Bags:
+  > Hashed EER Point:  Hyperplane = 9.2727°, Rate = 0.0092
+
+--- Testing with 13 Bags ---
+100%|██████████| 30/30 [23:26<00:00, 46.87s/it]
+Results for 13 Bags:
+  > Hashed EER Point:  Hyperplane = 9.1716°, Rate = 0.0092
+
+
+=== Starting Bagging Comparison Experiment (N=80, People=30) ===
+
+--- Testing with 1 Bags ---
+100%|██████████| 30/30 [04:16<00:00,  8.54s/it]
+Results for 1 Bags:
+  > Hashed EER Point:  Hyperplane = 26.2867°, Rate = 0.0385
+
+--- Testing with 3 Bags ---
+100%|██████████| 30/30 [10:54<00:00, 21.82s/it]
+Results for 3 Bags:
+  > Hashed EER Point:  Hyperplane = 18.3761°, Rate = 0.0161
+
+--- Testing with 5 Bags ---
+100%|██████████| 30/30 [15:37<00:00, 31.25s/it]
+Results for 5 Bags:
+  > Hashed EER Point:  Hyperplane = 14.7248°, Rate = 0.0104
+
+--- Testing with 7 Bags ---
+100%|██████████| 30/30 [19:17<00:00, 38.58s/it]
+Results for 7 Bags:
+  > Hashed EER Point:  Hyperplane = 13.7394°, Rate = 0.0127
+
+--- Testing with 9 Bags ---
+100%|██████████| 30/30 [22:15<00:00, 44.52s/it]
+Results for 9 Bags:
+  > Hashed EER Point:  Hyperplane = 11.9439°, Rate = 0.0100
+
+--- Testing with 11 Bags ---
+100%|██████████| 30/30 [12:05<00:00, 24.17s/it]
+Results for 11 Bags:
+  > Hashed EER Point:  Hyperplane = 11.0909°, Rate = 0.0076
+
+--- Testing with 13 Bags ---
+100%|██████████| 30/30 [13:38<00:00, 27.29s/it]
+Results for 13 Bags:
+  > Hashed EER Point:  Hyperplane = 10.6429°, Rate = 0.0075
+
+
+=== Starting Bagging Comparison Experiment (N=88, People=30) ===
+
+--- Testing with 1 Bags ---
+100%|██████████| 30/30 [01:37<00:00,  3.24s/it]
+Results for 1 Bags:
+  > Hashed EER Point:  Hyperplane = 29.2886°, Rate = 0.0265
+
+--- Testing with 3 Bags ---
+100%|██████████| 30/30 [03:21<00:00,  6.73s/it]
+Results for 3 Bags:
+  > Hashed EER Point:  Hyperplane = 20.4219°, Rate = 0.0115
+
+--- Testing with 5 Bags ---
+100%|██████████| 30/30 [05:03<00:00, 10.13s/it]
+Results for 5 Bags:
+  > Hashed EER Point:  Hyperplane = 17.9573°, Rate = 0.0120
+
+--- Testing with 7 Bags ---
+100%|██████████| 30/30 [09:55<00:00, 19.86s/it]
+Results for 7 Bags:
+  > Hashed EER Point:  Hyperplane = 16.7444°, Rate = 0.0084
+
+--- Testing with 9 Bags ---
+100%|██████████| 30/30 [08:32<00:00, 17.10s/it]
+Results for 9 Bags:
+  > Hashed EER Point:  Hyperplane = 14.7100°, Rate = 0.0074
+
+--- Testing with 11 Bags ---
+100%|██████████| 30/30 [10:09<00:00, 20.31s/it]
+Results for 11 Bags:
+  > Hashed EER Point:  Hyperplane = 14.0079°, Rate = 0.0096
+
+--- Testing with 13 Bags ---
+100%|██████████| 30/30 [11:47<00:00, 23.58s/it]
+Results for 13 Bags:
+  > Hashed EER Point:  Hyperplane = 13.0441°, Rate = 0.0057
+
+=== Starting Bagging Comparison Experiment (N=96, People=30) ===
+
+--- Testing with 1 Bags ---
+100%|██████████| 30/30 [05:45<00:00, 11.52s/it]
+Results for 1 Bags:
+  > Hashed EER Point:  Hyperplane = 32.2096°, Rate = 0.0270
+
+--- Testing with 3 Bags ---
+100%|██████████| 30/30 [23:54<00:00, 47.83s/it]
+Results for 3 Bags:
+  > Hashed EER Point:  Hyperplane = 23.1156°, Rate = 0.0141
+
+--- Testing with 5 Bags ---
+100%|██████████| 30/30 [27:06<00:00, 54.21s/it]
+Results for 5 Bags:
+  > Hashed EER Point:  Hyperplane = 20.7447°, Rate = 0.0082
+
+--- Testing with 7 Bags ---
+100%|██████████| 30/30 [33:36<00:00, 67.22s/it]
+Results for 7 Bags:
+  > Hashed EER Point:  Hyperplane = 18.2353°, Rate = 0.0084
+
+--- Testing with 9 Bags ---
+100%|██████████| 30/30 [2:22:32<00:00, 285.07s/it]
+Results for 9 Bags:
+  > Hashed EER Point:  Hyperplane = 17.6024°, Rate = 0.0084
+
+--- Testing with 11 Bags ---
+100%|██████████| 30/30 [1:08:16<00:00, 136.56s/it]
+Results for 11 Bags:
+  > Hashed EER Point:  Hyperplane = 16.2353°, Rate = 0.0071
+
+--- Testing with 13 Bags ---
+100%|██████████| 30/30 [38:08<00:00, 76.28s/it]
+Results for 13 Bags:
+  > Hashed EER Point:  Hyperplane = 14.8644°, Rate = 0.0046
+
+=== Starting Bagging Comparison Experiment (N=104, People=30) ===
+
+--- Testing with 1 Bags ---
+100%|██████████| 30/30 [22:37<00:00, 45.26s/it]
+Results for 1 Bags:
+  > Hashed EER Point:  Hyperplane = 36.8760°, Rate = 0.0227
+
+--- Testing with 3 Bags ---
+100%|██████████| 30/30 [27:19<00:00, 54.64s/it]
+Results for 3 Bags:
+  > Hashed EER Point:  Hyperplane = 26.5213°, Rate = 0.0112
+
+--- Testing with 5 Bags ---
+100%|██████████| 30/30 [37:48<00:00, 75.61s/it]
+Results for 5 Bags:
+  > Hashed EER Point:  Hyperplane = 22.7708°, Rate = 0.0056
+
+--- Testing with 7 Bags ---
+100%|██████████| 30/30 [34:47<00:00, 69.58s/it]
+Results for 7 Bags:
+  > Hashed EER Point:  Hyperplane = 20.7010°, Rate = 0.0084
+
+--- Testing with 9 Bags ---
+100%|██████████| 30/30 [39:48<00:00, 79.63s/it]
+Results for 9 Bags:
+  > Hashed EER Point:  Hyperplane = 19.9524°, Rate = 0.0049
+
+--- Testing with 11 Bags ---
+100%|██████████| 30/30 [21:39<00:00, 43.30s/it]
+Results for 11 Bags:
+  > Hashed EER Point:  Hyperplane = 19.1618°, Rate = 0.0055
+
+--- Testing with 13 Bags ---
+100%|██████████| 30/30 [25:19<00:00, 50.65s/it]
+Results for 13 Bags:
+  > Hashed EER Point:  Hyperplane = 18.9516°, Rate = 0.0064
