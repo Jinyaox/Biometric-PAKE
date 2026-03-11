@@ -105,34 +105,6 @@ class CosineLSH:
         self.filtered_indices = bad_indices
         return bad_indices
 
-    def filter_out_bad_ones(self, vector, degree_tolerance, k_bits=None):
-        if k_bits is not None:
-            # Use quantize_array for BOTH the 1D face vector and the 2D hyperplanes
-            vector = self.quantize_array(vector, k_bits)
-            active_hyperplanes = self.quantize_array(self.hyperplanes, k_bits)
-        else:
-            active_hyperplanes = self.hyperplanes
-            
-        norm_vec = np.linalg.norm(vector)
-        if norm_vec == 0:
-            self.filtered_indices = np.array([], dtype=int)
-            return self.filtered_indices
-        
-        unit_vec = vector / norm_vec
-    
-        # Normalize hyperplanes for cosine calculation
-        norm_hp = np.linalg.norm(active_hyperplanes, axis=1, keepdims=True)
-        norm_hp[norm_hp == 0] = 1
-        unit_hp = active_hyperplanes / norm_hp
-
-        cos_theta = np.dot(unit_hp, unit_vec)
-    
-        threshold = np.sin(np.radians(degree_tolerance))
-        bad_indices = np.where(np.abs(cos_theta) < threshold)[0]
-
-        self.filtered_indices = bad_indices
-        return bad_indices
-
     def filtered_hamming_weights(self, intA: int, intB: int) -> int:
         if self.filtered_indices is None: 
             raise AssertionError("No existing Filtering")
