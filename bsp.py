@@ -1,5 +1,5 @@
 ### DOCUMENTATION: This is the basic supporting packet that contains all the actual implementation of the final Bio-PAKE ###
-
+import numpy as np
 
 """
 1. The Cosine LSH functionality
