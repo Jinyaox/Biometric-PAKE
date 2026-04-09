@@ -1,5 +1,9 @@
 ### DOCUMENTATION: This is the basic supporting packet that contains all the actual implementation of the final Bio-PAKE ###
 import numpy as np
+import os
+from tqdm import tqdm
+import face_recognition
+import json
 
 """
 1. The Cosine LSH functionality
@@ -35,7 +39,7 @@ class CosineLSH:
         return n & mask
     
     @staticmethod
-    def quantize_array(arr, k: int):
+    def quantize_array(arr, k: int=12):
         """
         Quantizes a real-number array (1D vector or 2D matrix) into a k-bit signed integer array.
         Uses max-scaling to prevent zero-collapse at extremely low bit depths.
@@ -56,7 +60,7 @@ class CosineLSH:
         
         return v_quantized
 
-    def hash(self, vector, k_bits=None):
+    def hash(self, vector, k_bits=12):
         if k_bits is not None:
             # Use quantize_array for BOTH the 1D face vector and the 2D hyperplanes
             vector = self.quantize_array(vector, k_bits)
@@ -126,3 +130,55 @@ class CosineLSH:
 
     def hamming_distance(self, a: int, b: int) -> int:
         return bin(a ^ b).count('1')
+    
+# ------------------------------------------this following performs the feature extractions for faces-----------------------
+
+def subfolder_names(parent_folder):
+    # Iterate over all entries in parent folder
+    for entry in os.listdir(parent_folder):
+        full_path = os.path.join(parent_folder, entry)
+        if os.path.isdir(full_path):
+            yield full_path
+
+
+# Now I want to define a generator to generate all files within a particular folder
+def images_in_folder(folder_path):
+    for filename in os.listdir(folder_path):
+        full_path = os.path.join(folder_path, filename)
+        if os.path.isfile(full_path) and filename.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp')):
+            yield full_path
+
+def images_to_encoding(path):
+    image = face_recognition.load_image_file(path)
+    
+    if(len(face_recognition.face_encodings(image))==0): 
+        return [None]
+
+    if(len(face_recognition.face_encodings(image)[0])!=0):
+        return face_recognition.face_encodings(image)[0]
+
+    return [None]
+    
+
+def encode_all_files(filename:str,folder_extracted:str,cap=300):
+    all_folders=[image for image in subfolder_names("faces")]
+    facial_data=dict()
+
+    for folder in tqdm(all_folders): # for a specific person
+        facial_data[folder]=[]
+
+        counter=0
+
+        for image in images_in_folder(folder):
+            encoding=images_to_encoding(image)
+
+            if encoding[0]==None:
+                continue
+
+            facial_data[folder].append(encoding)
+
+            if counter==cap: break
+            else: counter+=1
+    with open(f"data_{folder_extracted}.json", "a") as f:
+        json.dump(facial_data, f, indent=4, default=lambda o:
+                o.tolist() if isinstance(o, np.ndarray) else str(o))
