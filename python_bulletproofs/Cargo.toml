@@ -1,0 +1,21 @@
+[package]
+name = "python_bulletproofs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "python_bulletproofs"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.19.0", features = ["extension-module"] }
+bulletproofs = "4.0.0"
+merlin = "3.0"
+rand = "0.8"
+curve25519-dalek-ng = { version = "4", features = ["u64_backend"] }
+rayon = "1"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1

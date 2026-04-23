@@ -1,0 +1,22 @@
+# Core scientific stack
+numpy>=1.24
+pandas>=1.5
+scipy>=1.10
+
+# Cryptography
+pycryptodome>=3.18
+cryptography>=41.0
+
+# Face recognition (for embedding extraction only)
+insightface>=0.7
+onnxruntime>=1.15
+
+# Build tools for compiled extensions
+# precomputescalmult: requires gcc + libsodium
+#   macOS:  brew install libsodium && cd precomputescalmult && bash build.sh
+#   Linux:  apt install libsodium-dev && cd precomputescalmult && bash build.sh
+#
+# python_bulletproofs: requires Rust toolchain + maturin
+#   pip install maturin
+#   cd python_bulletproofs && maturin develop --release
+maturin>=1.0

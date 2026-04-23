@@ -1,0 +1,28 @@
+# Compiled C extensions (rebuild with: cd precomputescalmult && bash build.sh)
+precomputescalmult/*.so
+precomputescalmult/*.dylib
+precomputescalmult/*.o
+
+# Compiled Rust extension (rebuild with: cd python_bulletproofs && maturin develop)
+python_bulletproofs/target/
+
+# Face embedding data (not redistributable)
+*.json
+*.npy
+
+# Benchmark / sweep outputs
+*.csv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
