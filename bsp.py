@@ -109,7 +109,7 @@ class CosineLSH:
         self.filtered_indices = bad_indices
         return bad_indices
 
-    def filtered_hamming_weights(self, intA: int, intB: int) -> int:
+    def filtered_hamming_weights(self, intA: int, intB: int, hmwT: int = 0) -> int:
         if self.filtered_indices is None: 
             raise AssertionError("No existing Filtering")
 
@@ -125,8 +125,10 @@ class CosineLSH:
         clean_inverse_mask = (~ignore_mask) & full_mask
         
         filtered_xor = xor_result & clean_inverse_mask
+        actual_flips = bin(filtered_xor).count('1')
         
-        return bin(filtered_xor).count('1')
+        # Subtract the allowed tolerance. Floor at 0 so any check for 'distance == 0' still works.
+        return max(0, actual_flips - hmwT)
 
     def hamming_distance(self, a: int, b: int) -> int:
         return bin(a ^ b).count('1')
