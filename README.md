@@ -8,23 +8,30 @@ The construction combines cosine locality-sensitive hashing with a small-error-s
 
 ## Repository contents
 
-- `Implementation.ipynb` - BioPAKE implementation and protocol experiments.
-- `FP_FN-Experiment.ipynb` - false-positive and false-negative evaluation.
-- `jiayu_safPAKE.ipynb` - supporting safe-PAKE experiments.
-- `results/` - generated experimental results.
+Please use the Apurva-Working-Branch for the most up-to-date implementation
 
 ## Paper
 
-**Asymmetric Fuzzy PAKE for Remote Biometric Authentication with Protection of Server-held Biometric Data** (NDSS Symposium 2026).
-
-The prototype evaluation reports facial-biometric configurations achieving over 90% true acceptance at false-acceptance rates of 2^-30, 2^-40, and 2^-50, with combined authentication times of 0.64 s, 2.34 s, and 9.16 s, respectively.
+**Asymmetric Fuzzy PAKE for Remote Biometric Authentication with Protection of Server-held Biometric Data** (Under Review).
 
 ## Main contributors
 
-This work was principally developed by:
+This github Repository is Developed and Maintained by:
 
 - **Jinyao Xu**
 - **Apurva Rai**
+
+With EQUAL CONTRIBUTION
+
+The Actual Paper is Developed By:
+
+- **Jinyao Xu**
+- **Apurva Rai**
+- **Phillip Nazarian**
+- **Ian G Harris**
+- **Stanislaw Jarecki**
+
+ALL With EQUAL CONTRIBUTION
 
 ## Note
 
